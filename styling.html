@@ -51,23 +51,30 @@ Description : Learning CSS.
             /*
             Add CSS that I stick the first child to the left side of the screen.
             */
-            position: fixed;
-            left: 0;
+            position: relative;
+            right: 40%;
+            width: 10%;
+            border: 3px ;
+            padding: 10px;
             color: red;
             
         }
 
         .block-demo > .inline-demo:nth-child(2) {            
+            
+            
             color: blue;
-            position: fixed;
-            text-align: center;
             
         }
 
         .block-demo > .inline-demo:nth-child(3) {            
+            
+            position: relative;
+            left: 40%;
+            width: 10%;
+            border: 3px ;
+            padding: 10px;
             color: green;
-            position: fixed;
-            right: 0;
             
         }
 
@@ -105,9 +112,12 @@ Description : Learning CSS.
         <div class="inline-demo"><span>I am green.</span></div>
     </div>    
 
+    
     <h2>CSS Image Styling with Inline CSS</h2>
     <!-- Add a dotted green border of 3px inline. Which style will win the competition? -->
     <img class="image-demo" style="border: 3px dotted green;" src="images/example.svg" alt="Demo Image">
+    
+
 
     <h2>CSS Hover Effects</h2>
     <div class="hover-demo"><span>Hover over me! My color will change to blue!</span></div>
